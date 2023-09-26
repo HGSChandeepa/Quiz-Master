@@ -72,6 +72,7 @@ class _QuizState extends State<Quiz> {
       home: Scaffold(
         body: isFinalPage
             ? FinalScreen(
+                allAnswers: userAnswers,
                 reStartQuiz: reStartQuiz,
               )
             : staterScreen == 1
